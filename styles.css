@@ -1,0 +1,21 @@
+.search {
+  padding-top: 20px;
+}
+.history {
+  font-size: 1.5rem;
+}
+blockquote {
+  border-color: #ff9800;
+}
+.secondary-content {
+  color: #03a9f4;
+}
+.hide {
+  display: none;
+}
+.submitBtn {
+  cursor: pointer;
+}
+.btn-block {
+  width: 100%;
+}

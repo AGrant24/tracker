@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>Tracker</title>
+  </head>
+  <body>
+    <!-- nav bar -->
+    <nav>
+      <div class="nav-wrapper light-blue">
+        <i class="material-icons brand-logo center">filter_drama</i>
+      </div>
+    </nav>
+    <!-- App Start -->
+
+    <div class="Container row">
+      <div class="col s12 offset-l3 l6">
+        <!-- id search bar -->
+        <div class="search">
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix">search</i>
+              <input
+                data-length="8"
+                value=""
+                id="first_name2"
+                type="text"
+                class="validate searchTrack"
+              />
+
+              <label class="active" for="first_name2"
+                >Enter Tracking ID<a href="#!" class="collection-item"></a
+              ></label>
+            </div>
+          </div>
+        </div>
+
+        <!-- ID Warning -->
+        <blockquote class="entValid hide">
+          Please enter a valid Tracking ID
+        </blockquote>
+
+        <div class="history">
+          <!-- Tracking history basic -->
+          <!-- <ul class="collection">
+      <li class="collection-item">01/03/21 - 20:03 - Payment recieved</li>
+      <li class="collection-item">01/03/21 - 20:03 - Sent to Courier</li>
+      <li class="collection-item">01/03/21 - 20:03 - Out for delivery</li>
+    </ul> -->
+
+          <!-- Tracking history advanced -->
+          <ul class="collection">
+            <div class="showStatus">
+              <!-- Payment -->
+              <div class="paymentShow">
+                <li class="collection-item avatar">
+                  <i class="material-icons circle light-blue">attach_money</i>
+                  <span class="title paymentTitle"></span>
+                  <p>Payment Recieved</p>
+                  <a href="#!" class="secondary-content"
+                    ><i class="material-icons">check_box</i></a
+                  >
+                </li>
+              </div>
+              <!-- Courier -->
+              <div class="courierShow">
+                <li class="collection-item avatar">
+                  <i class="material-icons circle light-blue">device_hub</i>
+                  <span class="title courierTitle"></span>
+                  <p>Sent to Courier</p>
+                  <a href="#!" class="secondary-content"
+                    ><i class="material-icons">check_box</i></a
+                  >
+                </li>
+              </div>
+              <!-- Out for -->
+              <div class="outForShow">
+                <li class="collection-item avatar">
+                  <i class="material-icons circle light-blue">local_shipping</i>
+                  <span class="title outForTitle">01/03/21 - 20:03</span>
+                  <p>Out for delivery - Expected 02/03/21</p>
+                  <a href="#!" class="secondary-content"
+                    ><i class="material-icons">check_box</i></a
+                  >
+                </li>
+              </div>
+              <!-- Delivered -->
+              <div class="deliverShow">
+                <li class="collection-item avatar">
+                  <i class="material-icons circle orange">verified_user</i>
+                  <span class="title deliverTitle">01/03/21 - 20:03</span>
+                  <p>Delivered</p>
+                  <a href="#!" class="secondary-content"
+                    ><i class="material-icons">check_box_outline_blank</i></a
+                  >
+                </li>
+              </div>
+            </div>
+          </ul>
+        </div>
+        <!-- blockquote -->
+        <blockquote>Delivery times are an estimate only.</blockquote>
+        <div class="submitBtn">
+          <div
+            class="col s12 offset-l3 l6 center-align btn waves-effect waves-light light-blue lighten-2"
+          >
+            <!-- Submit Button -->
+            <span class="white-text text-darken-2">Submit</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- App end -->
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>
